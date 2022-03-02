@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300;400;500;600;700&family=Handlee&family=Staatliches&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  color: #020202;
+  height: 100vh;
+  font-family: "Handlee", cursive;
+  background-image: url("../assets/sao2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-title {
+  position: absolute;
+  font-size: 40px;
+  color: #ffffff;
+  top: 30vh;
+  text-shadow: 0px 0px 10px black;
+}
+
+.main-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 25vh;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vh;
+  -webkit-backdrop-filter: blur(10%);
+          backdrop-filter: blur(10%);
+}
+
+.main-theme-li {
+  width: 30vh;
+  font-size: 26px;
+  padding: 5px 0px;
+  text-align: center;
+  text-shadow: 0px 0px 8px black;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 4px;
+}
+
+.main-theme-li:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  background-color: rgba(171, 40, 56, 0.8);
+}
+
+.main-filter {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

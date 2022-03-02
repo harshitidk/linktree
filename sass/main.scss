@@ -1,0 +1,88 @@
+@import './variable';
+
+body
+{
+    margin: 0;
+    padding: 0;
+    color: $color5;
+    height: 100vh;
+    font-family: $font4;
+    background-image: url('../assets/sao2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a
+{
+    text-decoration: none;
+    color: $color4;
+}
+
+.main
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+
+    &-title
+    {
+        position: absolute;
+        font-size: 40px;
+        color: $color4;
+        top: 30vh;
+        text-shadow: 0px 0px 10px black;
+    }
+
+    &-theme
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 25vh;
+        padding-top: 120px;
+        padding-bottom: 40px;
+        background-color: rgba($color: black, $alpha: 0.1);
+        align-items: center;
+        width: 80vh;
+        backdrop-filter: blur(10%);
+
+        &-li
+        {
+            width: 30vh;
+            font-size: 26px;
+            padding: 5px 0px;
+            text-align: center;
+            text-shadow: 0px 0px 8px black;
+            background-color: rgba($color: black, $alpha: 0.3);
+            transition: all 0.3s ease 0s;
+            border-radius: 4px;
+
+            &:hover
+            {
+                // width: 35vh;
+                box-shadow: 0px 0px 10px rgba($color: black, $alpha: 0.4);
+                background-color: rgba($color: #AB2838, $alpha: 0.8);
+            }
+        }
+    }
+
+    &-filter
+    {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: black, $alpha: 0.3);
+    }
+}
+
+
+.hover:hover 
+{
+    cursor: pointer;
+}

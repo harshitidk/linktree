@@ -1,0 +1,90 @@
+@import './red';
+
+body
+{
+    background-image: url('../image/trybg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $font5;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.main
+{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-con
+    {
+        padding: 20px 35px;
+        position: absolute;
+        background-color: rgba($color: silver , $alpha: 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 6%;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.con 
+{
+    &-pfp
+    {
+        height: 15vh;
+        width: 15vh;
+        border-radius: 50%;
+        background-image: url('../image/profile.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-name
+    {
+        margin: 10px 0px;
+        text-align: center;
+        font-size: 18px;
+        font-family: $font2;
+        color: white;
+        text-shadow: 0px 0px 10px $color1;
+    }
+
+    &-links
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: black;
+
+        &-li
+        {
+            width: 40vh;
+            background-color: rgba($color: white, $alpha: 0.5);
+            margin: 10px 0px;
+            padding: 12px 0px;
+            transition: all 0.6s ease 0s;
+
+            &:hover
+            {
+                background-color: rgba($color: white, $alpha: 0.8);
+            }
+        }
+    }
+}
+
+.hover:hover
+{
+    cursor: pointer;
+}
